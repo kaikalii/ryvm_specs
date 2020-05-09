@@ -1,72 +1,57 @@
-# Launchkey
-[launchkey]
-type = "controller"
-device = "Launchkey"
-non_globals = [1]
-
-[[launchkey.button]]
-action.type = "record"
-control.type = "control"
-control.index = 117
-
-[[launchkey.button]]
-action.type = "stop_recording"
-control.type = "control"
-control.index = 115
-
-[[launchkey.range]]
-action = { type = "drum", channel = 1, bounds = [0, 3] }
-control = { type = "channel_note", channel = 10, bounds = [36, 39] }
-
-[[launchkey.slider]]
-action.type = "tempo"
-control.type = "control"
-control.index = 21
-
-[[launchkey.slider]]
-action.type = "master_volume"
-control.type = "control"
-control.index = 22
-
-# Launchpad
-[launchpad]
-type = "controller"
-device = "Launchpad"
-
-[[launchpad.range]]
-action = { type = "record_loop", bounds = [0, 8] }
-control = { type = "note", bounds = [0, 16] }
-
-[[launchpad.range]]
-action = { type = "toggle_loop", bounds = [0, 8] }
-control = { type = "note", bounds = [16, 32] }
-
-[[launchpad.range]]
-action = { type = "drum", channel = 1, bounds = [0, 8] }
-control = { type = "note", bounds = [32, 48] }
-
-[[launchpad.range]]
-action = { type = "drum", channel = 1, bounds = [8, 16] }
-control = { type = "note", bounds = [48, 64] }
-
-# Gamepad
-[gamepad]
-type = "controller"
-gamepad = true
-
-[[gamepad.button]]
-action.type = "record"
-control.type = "control"
-control.index = 2
-
-[[gamepad.button]]
-action.type = "stop_recording"
-control.type = "control"
-control.index = 3
-
-[audio_input]
-type = "input"
-
+# # Launchkey
+# [launchkey]
+# type = "controller"
+# device = "Launchkey"
+# non_globals = [1]
+# [[launchkey.button]]
+# action.type = "record"
+# control.type = "control"
+# control.index = 117
+# [[launchkey.button]]
+# action.type = "stop_recording"
+# control.type = "control"
+# control.index = 115
+# [[launchkey.range]]
+# action = { type = "drum", channel = 1, bounds = [0, 3] }
+# control = { type = "channel_note", channel = 10, bounds = [36, 39] }
+# [[launchkey.slider]]
+# action.type = "tempo"
+# control.type = "control"
+# control.index = 21
+# [[launchkey.slider]]
+# action.type = "master_volume"
+# control.type = "control"
+# control.index = 22
+# # Launchpad
+# [launchpad]
+# type = "controller"
+# device = "Launchpad"
+# [[launchpad.range]]
+# action = { type = "record_loop", bounds = [0, 8] }
+# control = { type = "note", bounds = [0, 16] }
+# [[launchpad.range]]
+# action = { type = "toggle_loop", bounds = [0, 8] }
+# control = { type = "note", bounds = [16, 32] }
+# [[launchpad.range]]
+# action = { type = "drum", channel = 1, bounds = [0, 8] }
+# control = { type = "note", bounds = [32, 48] }
+# [[launchpad.range]]
+# action = { type = "drum", channel = 1, bounds = [8, 16] }
+# control = { type = "note", bounds = [48, 64] }
+# # Gamepad
+# [gamepad]
+# type = "controller"
+# gamepad = true
+# [[gamepad.button]]
+# action.type = "record"
+# control.type = "control"
+# control.index = 2
+# [[gamepad.button]]
+# action.type = "stop_recording"
+# control.type = "control"
+# control.index = 3
+# [audio_input]
+# type = "input"
 [load]
 type = "load"
 paths.example1 = 1

@@ -3,27 +3,23 @@ type = "wave"
 form = "saw"
 bend = 0.3
 
+[filter1]
+type = "filter"
+value.index = 1
+
+[bal1]
+type = "balance"
+volume.index = 28
+
 [s2]
 type = "wave"
 form = "noise"
 
-[filter1]
-type = "filter"
-input = "s1"
-value.index = 1
-
 [filter2]
 type = "filter"
-input = "s2"
 value.index = 1
 value.bounds = [0, 0.5]
 
-[bal1]
-type = "balance"
-input = "filter1"
-volume.index = 28
-
 [bal2]
 type = "balance"
-input = "filter2"
 volume.index = 28
