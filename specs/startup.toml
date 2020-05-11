@@ -15,8 +15,8 @@ control.type = "control"
 control.index = 115
 
 [[launchkey.range]]
-action = { type = "drum", channel = 1, bounds = [0, 3] }
-control = { type = "channel_note", channel = 10, bounds = [36, 39] }
+action = { type = "drum", channel = 1, bounds = [0, 8] }
+control = { type = "channel_note", channel = 10, bounds = [36, 44] }
 
 [[launchkey.slider]]
 action.type = "tempo"
@@ -27,6 +27,12 @@ control.index = 21
 action.type = "master_volume"
 control.type = "control"
 control.index = 22
+
+[[launchkey.slider]]
+action.type = "loop_speed"
+action.num = 1
+control.type = "control"
+control.index = 23
 
 # Launchpad
 [launchpad]
@@ -53,6 +59,7 @@ control = { type = "note", bounds = [48, 64] }
 [gamepad]
 type = "controller"
 gamepad = true
+output_channel = 1
 
 [[gamepad.button]]
 action.type = "record"
@@ -64,9 +71,28 @@ action.type = "stop_recording"
 control.type = "control"
 control.index = 3
 
-[audio_input]
-type = "input"
+[[gamepad.button]]
+action = { type = "drum", channel = 1, index = 0 }
+control = { type = "control", index = 6 }
 
+[[gamepad.button]]
+action = { type = "drum", channel = 1, index = 1 }
+control = { type = "control", index = 7 }
+
+[[gamepad.button]]
+action = { type = "drum", channel = 1, index = 2 }
+control = { type = "control", index = 4 }
+
+[[gamepad.button]]
+action = { type = "drum", channel = 1, index = 3 }
+control = { type = "control", index = 5 }
+
+[[gamepad.button]]
+action = { type = "drum", channel = 1, index = 4 }
+control = { type = "control", index = 14 }
+
+# [audio_input]
+# type = "input"
 [load]
 type = "load"
 paths.example1 = 1

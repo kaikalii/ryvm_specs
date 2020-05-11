@@ -5,7 +5,9 @@ bend = 0.3
 
 [filter1]
 type = "filter"
-value.index = 1
+value.controller = "gamepad"
+value.index = 13
+value.bounds = [0.3, 1]
 
 [bal1]
 type = "balance"
@@ -17,7 +19,8 @@ form = "noise"
 
 [filter2]
 type = "filter"
-value.index = 1
+value.controller = "gamepad"
+value.index = 12
 value.bounds = [0, 0.5]
 
 [bal2]

@@ -1,0 +1,13 @@
+[s]
+type = "wave"
+form = "saw"
+bend = 0.3
+
+[filter]
+type = "filter"
+value.index = 1
+filter = "crush"
+
+[bal]
+type = "balance"
+volume = { index = 25 }

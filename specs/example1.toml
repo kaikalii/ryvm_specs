@@ -2,7 +2,6 @@
 type = "wave"
 form = "square"
 bend = 0.3
-attack = 0.05
 
 [filter]
 type = "filter"
@@ -16,4 +15,10 @@ pan.bounds = [-1, 1]
 
 [d]
 type = "drums"
-paths = ["kick.wav", "clap.wav", "hat.wav"]
+paths = [
+    "kick.wav",
+    "clap.wav",
+    "hat.wav",
+    "FL_LH2_RIMSHOT 02.wav",
+    "ATXT1_Hi-Hat_15.wav"
+]
